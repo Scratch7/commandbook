@@ -79,11 +79,11 @@ public class MessagingComponent extends BukkitComponent implements Listener {
                     + (status.trim().length() == 0 ? "" : " (" + status + ")"));
         }
 
-        receiver.sendMessage(ChatColor.GRAY + "(From "
+        receiver.sendMessage(ChatColor.LIGHT_PURPLE + "(From "
                 + PlayerUtil.toColoredName(sender, ChatColor.YELLOW) + "): "
                 + ChatColor.WHITE + message);
 
-        sender.sendMessage(ChatColor.GRAY + "(To "
+        sender.sendMessage(ChatColor.LIGHT_PURPLE + "(To "
                 + PlayerUtil.toColoredName(receiver, ChatColor.YELLOW) + "): "
                 + ChatColor.WHITE + message);
 
